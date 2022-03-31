@@ -1,0 +1,99 @@
+.Dashborad-header {
+    height: 295px;      
+    background: linear-gradient(180deg, #009CFF 0%, #DC257D 100%);
+    border-radius: 0px 0px 18px 18px;
+  }
+
+  .Dashborad-body{
+    height: 600px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, rgba(241, 248, 248, 0) 0%, #F1F8F8 100%);
+  }
+  
+ 
+ .set-date-container{
+   padding-top: 10px;
+ }
+
+ .greeting-container{
+   height: 35px;
+    /* border: 1px solid blue; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-left: 20px;
+    
+ }
+
+ .date-container{
+  /* border: 1px solid red; */
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 80%;
+  color: #FFFFFF;
+  margin-left: 20px;
+ }
+
+ .Weather-box{
+  position: absolute;
+  background-color: rgba(219, 223, 227, 0.75);
+  border-radius: 10px;
+  width: 335px;
+  height: 148px;
+  margin-left: 20px;
+
+ }
+
+
+.header-grid-bar-title{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ 
+}
+ 
+.notic-container{
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 40px
+}
+
+ 
+
+.notic-container{
+  width: 60%;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  margin-left: 65px;
+}
+
+.notic-icon-1{
+
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 100px;
+}
+
+.notic-icon-2{
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  background-color: white;
+ 
+}
+
+.ringBell{
+  margin-right: 10px;
+  margin-top: 10px;
+
+}
+
+.taiLogo{
+  margin-top: 10px;
+  margin-right: 10px;
+}

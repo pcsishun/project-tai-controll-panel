@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Dashborad  from './Dashboard/Dashboard';
+import {Link, Routes, Route} from 'react-router-dom';
+import PlantDetail from './PlantDetail/PlantDetail';
+import Consumption from './Consumption/Consumption';
+import System from './System/System';
+import FooterBar from './FooterBar/FooterBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Dashborad/>}></Route>
+      </Routes>
+      <Routes>
+        <Route path="/plantdetail" element={<PlantDetail/>}></Route>
+      </Routes>
+      <Routes>
+        <Route path="/consumption" element={<Consumption/>}></Route>
+      </Routes>
+      <Routes>
+        <Route path="/system" element={<System/>}></Route>
+      </Routes>
+      <FooterBar/>
     </div>
   );
 }
