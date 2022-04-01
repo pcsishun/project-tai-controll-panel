@@ -1,0 +1,26 @@
+.myPlant-Plantation{
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+}
+
+.myPlant-ProductChoice > span{
+    margin-left: 20px;
+}
+
+.SmallPanel-FodderBox{
+    margin-top: 22px;
+}
+
+.SmallPanel-FodderBox-control{
+    height: 319px;
+    width: 257px;
+    margin: auto;
+    background: #FFFFFF;
+    border: 1px solid #E3E6E6;
+    box-sizing: border-box;
+    border-radius: 12px;
+}

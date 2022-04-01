@@ -1,8 +1,8 @@
 import moment from 'moment';
-import "./Dashboard.css"
-import notificationDash from "../images/Vector (1).png"
-import taidash from "../images/TAI Logo@2x.png"
-
+import "./Dashboard.css";
+import notificationDash from "../images/Vector (1).png";
+import taidash from "../images/TAI Logo@2x.png";
+import DashboardBody from "./DashboardBody/DashboardBody.js";
 
 const Dashborad = () => {
 
@@ -36,7 +36,7 @@ const Dashborad = () => {
                 </div>
             </div>
             <div className="Dashborad-body">
-                
+                <DashboardBody/>
             </div>
         </>
 
