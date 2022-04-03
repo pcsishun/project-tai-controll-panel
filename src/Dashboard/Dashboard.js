@@ -32,7 +32,29 @@ const Dashborad = () => {
 
 
                 <div className='Weather-box'>
+                    <div className="Weather-Text">
+                        <p>Weather</p>
+                    </div>
 
+                    <div className="Weather-Box-TempReport">
+                        <div className="Weather-TempCurrent">
+                            <div className="TempNow">24&#x2103;</div>
+                            <div className="SkyLook">Partly Cloudy</div>
+                        </div>
+                        <div className="Weather-TempHighLow">
+                            <span>
+                                <div className="Weather-TempLow">
+                                    <div className="TempLow-Text"></div>
+                                    <div className="TempLow-Num"></div>
+                                </div>
+                            </span>
+                            <span>
+                                <div className="Weather-TempHigh">
+
+                                </div>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="Dashborad-body">

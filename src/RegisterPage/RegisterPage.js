@@ -12,35 +12,35 @@ const RegisterPage = () => {
     const [RegLastname, checkRegLastname] = useState("");
     const [RegPassword, checkRegPassword] = useState("");
     const [conPassword ,setConPassword] = useState("");
-    const [isError, setIsError] = useState(false);
-    const [isErrorText, setIsErrorText] = useState("")
+    // const [isError, setIsError] = useState(false);
+    // const [isErrorText, setIsErrorText] = useState("")
 
 
-    const onHaddleSubmit = async () => {
+    // const onHaddleSubmit = async () => {
         
-        if(RegPassword === conPassword){
+    //     if(RegPassword === conPassword){
             
-                const payload = {
-                    username: RegUsername,
-                    firstname: RegFirstname,
-                    lastname: RegLastname,
-                    password: RegPassword
-                }
+    //             const payload = {
+    //                 username: RegUsername,
+    //                 firstname: RegFirstname,
+    //                 lastname: RegLastname,
+    //                 password: RegPassword
+    //             }
 
-                await axios.post("https://7b50-118-172-163-199.ngrok.io/register", payload)
-                .then(res => {
-                        console.log("this res ==> ",res)
-                    });
+    //             await axios.post("https://7b50-118-172-163-199.ngrok.io/register", payload)
+    //             .then(res => {
+    //                     console.log("this res ==> ",res)
+    //                 });
 
-                console.log("register success");
-                console.log(payload);
+    //             console.log("register success");
+    //             console.log(payload);
    
 
-        }else{
-            setIsError(true);
-            setIsErrorText("password not match")
-        }
-    }
+    //     }else{
+    //         setIsError(true);
+    //         setIsErrorText("password not match")
+    //     }
+    // }
     
 
     return(
@@ -101,10 +101,10 @@ const RegisterPage = () => {
                      </div>
                     </div>
                     <div>
-                        {isError === true && <h6 style={{color: "red"}}>{isErrorText}</h6>}
+                        {/* {isError === true && <h6 style={{color: "red"}}>{isErrorText}</h6>} */}
                     </div>
                     <div className="Register-Submit">
-                        <button onClick={onHaddleSubmit}>submit</button>
+                        <button  >submit</button>
                         <div className="alreadly-have-password">
                             <Link to="/loginpage">alreadly have account</Link>
                         </div>
