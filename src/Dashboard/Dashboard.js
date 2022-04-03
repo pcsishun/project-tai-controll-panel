@@ -44,13 +44,24 @@ const Dashborad = () => {
                         <div className="Weather-TempHighLow">
                             <span>
                                 <div className="Weather-TempLow">
-                                    <div className="TempLow-Text"></div>
-                                    <div className="TempLow-Num"></div>
+                                    <div className="TempLow-Text">
+                                        <p>Low Temp</p>
+                                    </div>
+
+                                    <div className="TempLow-Num">
+                                        <p>14&#x2103;</p>
+                                    </div>
                                 </div>
                             </span>
                             <span>
                                 <div className="Weather-TempHigh">
+                                    <div className="TempHigh-Text">
+                                            <p>High Temp</p>
+                                        </div>
 
+                                        <div className="TempHigh-Num">
+                                            <p>34&#x2103;</p>
+                                        </div>
                                 </div>
                             </span>
                         </div>

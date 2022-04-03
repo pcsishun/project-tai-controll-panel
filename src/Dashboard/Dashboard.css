@@ -40,14 +40,12 @@
 
  .Weather-Box-TempReport{
     height: 85px;
-    border: 1px solid red;
     display: grid;
     grid-template-columns: 1fr 2fr;
 
  }
 
  .Weather-TempCurrent{
-  border: 1px solid red;
    text-align: center;
    color:white;
    margin: auto;
@@ -86,12 +84,54 @@
   border-radius: 8px;
 }
 
+.TempLow-Text{
+  padding-top: 4px;
+ height: 20px;
+ font-family: 'SF Pro';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 15px;
+ letter-spacing: 0.2px;
+}
+
+.TempLow-Num{
+  padding-top: 4px;
+ height: 10px;
+ font-family: 'SF Pro';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 14px;
+ letter-spacing: 0.2px;
+}
+
+
+
 .Weather-TempHigh{
   margin-top: 10px;
   height: 68px;
   width: 88px;
   background: #CD4B8A;
   border-radius: 8px;
+}
+
+.TempHigh-Text{
+  padding-top: 4px;
+ height: 20px;
+ font-family: 'SF Pro';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 15px;
+ letter-spacing: 0.2px;
+}
+
+.TempHigh-Num{
+  padding-top: 4px;
+ height: 10px;
+ font-family: 'SF Pro';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 14px;
+ letter-spacing: 0.2px;
 }
 
  .date-container{
@@ -112,8 +152,10 @@
   width: 335px;
   height: 148px;
   margin-left: 20px;
+  color: white;
 
  }
+
 
 
 .header-grid-bar-title{
