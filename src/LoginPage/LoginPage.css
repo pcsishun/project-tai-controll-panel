@@ -1,0 +1,27 @@
+.loginPage-All{
+    height: 590px;
+    text-align: center;
+}
+
+.Tailogo{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.UsernameBox{
+    padding-top: 20px;
+}
+
+.Password-label{
+    padding-top: 10px;
+}
+
+.PasswordBox{
+    padding-top: 20px;
+}
+
+.SubmitBox{
+    padding-top: 20px;
+    word-spacing: 20px;
+}
+

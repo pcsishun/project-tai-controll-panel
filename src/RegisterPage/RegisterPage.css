@@ -1,0 +1,15 @@
+.RegisterPage-All{
+    height: 590px;
+    text-align: center;
+}
+
+.RegisterBox-UsernameBox, .RegisterBox-FirstnameBox, .RegisterBox-LastnameBox, 
+.RegisterBox-PasswordBox, .RegisterBox-CFPasswordBox, .Register-Submit{
+    padding-top: 20px;
+}
+
+
+.alreadly-have-password{
+    margin-top: 20px;
+    font-size: 12px;
+}

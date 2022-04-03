@@ -5,10 +5,18 @@ import PlantDetail from './PlantDetail/PlantDetail';
 import Consumption from './Consumption/Consumption';
 import System from './System/System';
 import FooterBar from './FooterBar/FooterBar';
+import LoginPage from './LoginPage/LoginPage'
+import RegisterPage from './RegisterPage/RegisterPage'
 
 function App() {
   return (
     <div className="App">
+      <Routes>
+        <Route path='/loginpage' element={<LoginPage/>}></Route>
+      </Routes>
+      <Routes>
+        <Route path="/registerpage" element={<RegisterPage/>}></Route>
+      </Routes>
       <Routes>
         <Route path="/" element={<Dashborad/>}></Route>
       </Routes>

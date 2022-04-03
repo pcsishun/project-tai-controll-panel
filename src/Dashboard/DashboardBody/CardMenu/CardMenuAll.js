@@ -6,6 +6,7 @@ import WindPic from "../../../images/Vector (2).png"
 import RainPic from "../../../images/cloud-drizzle.png"
 
 const CardMenuAll = () => {
+    
     return(
         <>
             <div className="SmallPanel-FodderBox">
