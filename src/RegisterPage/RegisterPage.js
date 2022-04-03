@@ -14,32 +14,36 @@ const RegisterPage = () => {
     const [conPassword ,setConPassword] = useState("");
     const [isError, setIsError] = useState(false);
     const [isErrorText, setIsErrorText] = useState("")
-
+    const [checkingData, setCheckingData] = useState([])
 
     const onHaddleSubmit = async () => {
-        
+        // console.log("start function...")
         if(RegPassword === conPassword){
-            
-                const payload = {
+            // console.log(RegPassword, conPassword)
+                const isRegister = await axios.post("http://localhost:3120/register", {
                     username: RegUsername,
                     firstname: RegFirstname,
                     lastname: RegLastname,
                     password: RegPassword
+                })
+                setCheckingData(isRegister.data)
+                
+                if(isRegister.data.registerStatus === false){
+                    setIsError(true);
+                    setIsErrorText(isRegister.data.text);
+                }else{
+                    console.log(isRegister.data)
+                    alert("success")
                 }
-
-                await axios.post("https://7b50-118-172-163-199.ngrok.io/register", payload)
-                .then(res => {
-                        console.log("this res ==> ",res)
-                    });
-
-                console.log("register success");
-                console.log(payload);
-   
-
         }else{
+            // console.log("error")
             setIsError(true);
             setIsErrorText("password not match")
         }
+    }
+
+    const debuging = () => {
+        console.log(checkingData)
     }
     
 
@@ -50,7 +54,6 @@ const RegisterPage = () => {
                     <img className="Tailogo" src={tailogo} height="50px" width="50px"/>
                 </div>
 
-                <form>
                     <div className="RegisterBox-Username">
                         <div className="RegisterBox-UsernameBox">
                             <input 
@@ -105,18 +108,15 @@ const RegisterPage = () => {
                     </div>
                     <div className="Register-Submit">
                         <button onClick={onHaddleSubmit}>submit</button>
+                        <div>
+                            <button onClick={debuging}>Debug</button>
+                        </div>
                         <div className="alreadly-have-password">
                             <Link to="/loginpage">alreadly have account</Link>
                         </div>
                     </div>
-
-                </form>
-
             </div>
-        
-        
         </>
-
 
     );
 }
