@@ -4,6 +4,7 @@ import LeafIcon from "../images/LeafIcon.png"
 import HumidityImage from "../images/humidity 1.png"
 import TempImage from "../images/thermometer 1.png"
 import PlantAgeImage from "../images/carbon_soil-moisture-field.png"
+import WaterIcon from "../images/Vector.png"
 
 
 const PlantDetail = () => {
@@ -69,6 +70,33 @@ const PlantDetail = () => {
             </div>
 
             <div className="PlantDetail-body">
+                <div className="PlantDetail-WaterLighting">
+                    <div className="Water-Control">
+                        <div className="WaterIcon-Button">
+                            <div className="Water-Icon">
+                                <img className="Water-Drop" src={WaterIcon} width="20" height="23"/>
+
+                                <span className="Water-Control-Button">
+                                    <input
+                                        className="react-switch-checkbox"
+                                        id={`react-switch-new`}
+                                        type="checkbox"
+                                    />
+                                    <label
+                                        className="react-switch-label"
+                                        htmlFor={`react-switch-new`}
+                                    >
+                                        <span className={`react-switch-button`} />
+                                        
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="Lighting-Control">
+
+                    </div>
+                </div>
 
             </div>
         </>
