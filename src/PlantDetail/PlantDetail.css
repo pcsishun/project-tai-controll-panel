@@ -11,3 +11,135 @@
   right: 0px;
   background: #E5E5E5;
 }
+
+.PlantDetail-BackButton{
+
+  text-align: left;
+  margin-left: 20px ;
+  padding-top: 55px;
+}
+
+.PlantDetail-PlantCount{
+
+  text-align: left;
+  margin-left: 20px;
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  color: #F2D1B2;
+  height: 15px;
+}
+
+.PlantDetail-ProductName{
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  height: 1px;
+}
+
+.ProductName{
+
+  margin-left: 20px;
+  text-align: left;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  color: #FFFFFF;
+  height: 30px;
+}
+
+.ProductName-Location{
+
+  text-align: left;
+  margin-left: 20px;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #B5B8BE;
+}
+
+.ProductName-LeafIcon{
+  margin-top: 5px;
+  margin-right: 30px;
+}
+
+.PlantDetail-SensorMonitor{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 22px;
+  margin-right: 22px;
+  margin-top: 100px;
+  height: 100px;
+  background: rgba(219, 223, 227, 0.75);
+  border-radius: 10px;
+}
+
+
+.Humidity-Image{
+  margin-top: 10px;
+  height: 5px;
+}
+
+.Humidity-Text{
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 30px;
+  height: 6px;
+}
+
+.Humidity-Var{
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.Temp-Image{
+  margin-top: 10px;
+  height: 5px;
+}
+
+.Temp-Text{
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 30px;
+  height: 6px;
+}
+
+.Temp-Var{
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+
+.PlantAge-Image{
+  margin-top: 10px;
+  height: 5px;
+}
+
+.PlantAge-Text{
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 30px;
+  height: 6px;
+}
+
+.PlantAge-Var{
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
