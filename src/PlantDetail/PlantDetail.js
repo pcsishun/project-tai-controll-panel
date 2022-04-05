@@ -5,9 +5,28 @@ import HumidityImage from "../images/humidity 1.png"
 import TempImage from "../images/thermometer 1.png"
 import PlantAgeImage from "../images/carbon_soil-moisture-field.png"
 import WaterIcon from "../images/Vector.png"
+import MoonIcon from "../images/MoonIcon.png"
+import Fan from "../images/fan 1.png"
+import ThreeLeaf from "../images/3Leaf.png"
+import AiChip from "../images/chip-2 1.png"
+import {useState, useEffect} from 'react';
+
 
 
 const PlantDetail = () => {
+
+    const [isActive, setIsActive] = useState(false);
+
+    const ButtonActive =()=>{
+        if(isActive === false){
+            setIsActive(true);
+
+        }else{
+            setIsActive(false)
+        }
+        console.log(isActive)
+    }
+
     return (
         <>
             <div className="PlantDetail-header">
@@ -70,6 +89,7 @@ const PlantDetail = () => {
             </div>
 
             <div className="PlantDetail-body">
+                {/* ---Row 1 Water and Lighting Control--- */}
                 <div className="PlantDetail-WaterLighting">
                     <div className="Water-Control">
                         <div className="WaterIcon-Button">
@@ -91,11 +111,110 @@ const PlantDetail = () => {
                         </div>
 
                         <div className="WaterSpray-CountDown">
-                            <p>8h 30min</p>
+                            <p>2h 30min</p>
                         </div>
                     </div>
                     <div className="Lighting-Control">
+                        <div className="LightingIcon-Button">
+                                <div className="Lighting-Icon">
+                                    <img className="Lighting-Drop" src={MoonIcon} width="20" height="23"/>
+                                </div>
+                                {/* ----SwitchButtonBelow---- */}
+                                <div className="Lighting-Control-Button">
+                                    <label className="Lighting-Control-Switch">
+                                        <input type="checkbox" />
+                                        <span className="Lighting-Swtich-Slider" />
+                                    </label>
+                                </div>
+                                {/* ----SwitchButton---- */}
+                            </div>
 
+                            <div className="Lighting-Label">
+                                <p>Lighting</p>
+                            </div>
+
+                            <div className="Lighting-CountDown">
+                                <p>8h 30min</p>
+                            </div>
+                    </div>
+                </div>
+
+                {/* ---Row Number 2 For Room Fan and Fertilizer Spray--- */}
+
+                <div className="PlantDetail-WaterLighting">
+                    <div className="RoomFan-Control">
+                        <div className="RoomFanIcon-Button">
+                            <div className="RoomFan-Icon">
+                                <img className="RoomFan-Drop" src={Fan} width="20" height="23"/>
+                            </div>
+                            {/* ----SwitchButtonBelow---- */}
+                            <div className="RoomFan-Control-Button">
+                                <label className="RoomFan-Control-Switch">
+                                    <input type="checkbox" />
+                                    <span className="RoomFan-Swtich-Slider" />
+                                </label>
+                            </div>
+                            {/* ----SwitchButton---- */}
+                        </div>
+
+                        <div className="RoomFan-Label">
+                            <p>Room Fan</p>
+                        </div>
+
+                        <div className="RoomFan-CountDown">
+                            <p>5h 30min</p>
+                        </div>
+                    </div>
+                    <div className="Fertilizer-Control">
+                        <div className="FertilizerIcon-Button">
+                                <div className="Fertilizer-Icon">
+                                    <img className="Fertilizer-Drop" src={ThreeLeaf} width="25" height="25"/>
+                                </div>
+                                {/* ----SwitchButtonBelow---- */}
+                                <div className="Fertilizer-Control-Button">
+                                    <label className="Fertilizer-Control-Switch">
+                                        <input type="checkbox" />
+                                        <span className="Fertilizer-Swtich-Slider" />
+                                    </label>
+                                </div>
+                                {/* ----SwitchButton---- */}
+                            </div>
+
+                            <div className="Fertilizer-Label">
+                                <p>Fertilizer Sprayer</p>
+                            </div>
+
+                            <div className="Fertilizer-CountDown">
+                                <p>1h 30min</p>
+                            </div>
+                    </div>
+                </div>
+
+                <div className="System-Automatic">
+                    <div className="Automate-Image">
+                        <div className="Automate-Image-Background">
+                            <img className="Automate-Chip-Image" src={AiChip} width="65"/>
+
+                        </div>
+                    </div>
+                    <div className="Automate-Label-Timer">
+                        <div className="Automate-Label">
+                            <p>Automatic Mode</p>
+                        </div>
+
+                        <div className="Automate-Timer">
+                            <p>1h 30min</p>
+                        </div>
+
+                    </div>
+                    <div className="Automate-Switch">
+                        <div className="Automate-Button-Control">
+                            <label className="Automate-Control-Switch">
+                                <input type="checkbox"/>
+                                <span className="Automate-Control-Slider"/>
+                            </label>
+
+                        </div>
                     </div>
                 </div>
 

@@ -6,7 +6,7 @@
   }
   
 .PlantDetail-body {
-  height: 600px;
+  height: 450px;
   left: 0px;
   right: 0px;
   background: #E5E5E5;
@@ -254,4 +254,432 @@ input:checked + .Water-Swtich-Slider::before{
   letter-spacing: 0.6px;
   color: rgba(255, 255, 255, 0.8);
   margin-left: 16px;
+}
+
+/* ---Lighting Card--- */
+
+.LightingIcon-Button{
+  height: 42px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Lighting-Control{
+  height: 120px;
+  width: 155px;
+  background: rgba(81, 175, 237, 0.7);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.Lighting-Icon{
+  height: 35px;
+  width: 35px;
+  background-color: #F3F7F6;
+  border-radius: 100%;
+  margin: 16px 0px 0px 16px;
+}
+
+.Lighting-Drop{
+  margin: 7px 7px 7px 8px;
+}
+
+.Lighting-Control{
+  height: 120px;
+  width: 155px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+/* ----Experimenting Button Making--- */
+
+.Lighting-Control-Switch{
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.Lighting-Control-Switch input{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.Lighting-Swtich-Slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 40px;
+}
+
+.Lighting-Swtich-Slider::before{
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  bottom: px;
+  background-color: grey;
+  transition: 0.4s;
+  border-radius: 100%;
+
+}
+
+input:checked + .Lighting-Swtich-Slider{
+  background-color: #80dfff;
+}
+
+input:checked + .Lighting-Swtich-Slider::before{
+  transform: translateX(32px);
+
+}
+
+.Lighting-Label{
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  margin-left: 16px;
+  height: 20px
+}
+
+.Lighting-CountDown{
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  color: black;
+  margin-left: 16px;
+}
+
+/* ---Row 2 CSS--- RoomFan*/
+
+.RoomFanIcon-Button{
+  height: 42px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.RoomFan-Control{
+  height: 120px;
+  width: 155px;
+  background: rgba(81, 175, 237, 0.7);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.RoomFan-Icon{
+  height: 35px;
+  width: 35px;
+  background-color: #F3F7F6;
+  border-radius: 100%;
+  margin: 16px 0px 0px 16px;
+}
+
+.RoomFan-Drop{
+  margin: 6px 7px 5px 7px;
+}
+
+.RoomFan-Control{
+  height: 120px;
+  width: 155px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+/* ----Experimenting Button Making--- */
+
+.RoomFan-Control-Switch{
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.RoomFan-Control-Switch input{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.RoomFan-Swtich-Slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 40px;
+}
+
+.RoomFan-Swtich-Slider::before{
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  bottom: px;
+  background-color: grey;
+  transition: 0.4s;
+  border-radius: 100%;
+
+}
+
+input:checked + .RoomFan-Swtich-Slider{
+  background-color: #80dfff;
+}
+
+input:checked + .RoomFan-Swtich-Slider::before{
+  transform: translateX(32px);
+
+}
+
+.RoomFan-Label{
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  margin-left: 16px;
+  height: 20px
+}
+
+.RoomFan-CountDown{
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  color: black;
+  margin-left: 16px;
+}
+
+/* ---Row 2 CSS--- Fertilizer*/
+
+.FertilizerIcon-Button{
+  height: 42px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Fertilizer-Control{
+  height: 120px;
+  width: 155px;
+  background: rgba(81, 175, 237, 0.7);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.Fertilizer-Icon{
+  height: 35px;
+  width: 35px;
+  background-color: #F3F7F6;
+  border-radius: 100%;
+  margin: 16px 0px 0px 16px;
+}
+
+.Fertilizer-Drop{
+  margin: 6px 7px 7px 5px;
+}
+
+.Fertilizer-Control{
+  height: 120px;
+  width: 155px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+/* ----Experimenting Button Making--- */
+
+.Fertilizer-Control-Switch{
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.Fertilizer-Control-Switch input{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.Fertilizer-Swtich-Slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 40px;
+}
+
+.Fertilizer-Swtich-Slider::before{
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  bottom: px;
+  background-color: grey;
+  transition: 0.4s;
+  border-radius: 100%;
+
+}
+
+input:checked + .Fertilizer-Swtich-Slider{
+  background-color: #80dfff;
+}
+
+input:checked + .Fertilizer-Swtich-Slider::before{
+  transform: translateX(32px);
+
+}
+
+.Fertilizer-Label{
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  margin-left: 16px;
+  height: 20px
+}
+
+.Fertilizer-CountDown{
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  color: black;
+  margin-left: 16px;
+}
+
+/* -----Automatic System Card----- */
+
+.System-Automatic{
+  background-color: #51AFEDBF;  ;
+  height: 100px;
+  width: 335;
+  margin: 20px 20px 0px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Automate-Image{
+  flex: 50px 1;
+  height: 100px;
+}
+
+.Automate-Image-Background{
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 100%;
+}
+
+.Automate-Chip-Image{
+  position: relative;
+  margin: 8px 0px 0px 7px;
+}
+
+.Automate-Label-Timer{
+  flex: 3;
+}
+
+.Automate-Label{
+  margin-top: 20px;
+  margin-left: 10px;
+  height: 15px;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.Automate-Timer{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.6px;
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+
+.Automate-Switch{
+  flex: 1;
+}
+
+.Automate-Control-Switch{
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.Automate-Control-Switch input{
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+}
+
+.Automate-Control-Slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 40px;
+}
+
+.Automate-Control-Slider::before{
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 100%;
+}
+
+input:checked + .Automate-Control-Slider{
+  background-color: #80dfff;
+}
+
+input:checked + .Automate-Control-Slider::before{
+  transform: translateX(32px);
 }
