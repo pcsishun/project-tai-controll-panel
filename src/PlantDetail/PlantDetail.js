@@ -75,22 +75,23 @@ const PlantDetail = () => {
                         <div className="WaterIcon-Button">
                             <div className="Water-Icon">
                                 <img className="Water-Drop" src={WaterIcon} width="20" height="23"/>
-
-                                <span className="Water-Control-Button">
-                                    <input
-                                        className="react-switch-checkbox"
-                                        id={`react-switch-new`}
-                                        type="checkbox"
-                                    />
-                                    <label
-                                        className="react-switch-label"
-                                        htmlFor={`react-switch-new`}
-                                    >
-                                        <span className={`react-switch-button`} />
-                                        
-                                    </label>
-                                </span>
                             </div>
+                            {/* ----SwitchButtonBelow---- */}
+                            <div className="Water-Control-Button">
+                                <label className="Water-Control-Switch">
+                                    <input type="checkbox" />
+                                    <span className="Water-Swtich-Slider" />
+                                </label>
+                            </div>
+                            {/* ----SwitchButton---- */}
+                        </div>
+
+                        <div className="WaterSpray-Label">
+                            <p>Water Spray</p>
+                        </div>
+
+                        <div className="WaterSpray-CountDown">
+                            <p>8h 30min</p>
                         </div>
                     </div>
                     <div className="Lighting-Control">
