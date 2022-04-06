@@ -15,17 +15,47 @@ import {useState, useEffect} from 'react';
 
 const PlantDetail = () => {
 
-    const [isActive, setIsActive] = useState(false);
+    // const [isActive, setIsActive] = useState(false);
+    const [waterToggle, setWaterToggle] = useState("Water-Control");
+    const [lightToggle, setLightToggle] = useState("Lighting-Control");
+    const [fanToggle, setFanToggle] = useState("RoomFan-Control");
+    const [fertilizerToggle, setFertilizerToggle] = useState("Fertilizer-Control")
+ 
 
-    const ButtonActive =()=>{
-        if(isActive === false){
-            setIsActive(true);
+    // const ButtonActive =()=>{
+        
+    //     if(isActive === false){
+    //         setIsActive(true);
+    //         console.log("if ",isActive)
 
-        }else{
-            setIsActive(false)
-        }
-        console.log(isActive)
+    //     }else{
+    //         setIsActive(false)
+    //         console.log("else ",isActive)
+    //     }
+    // }
+
+    const buttonWater = () => {
+        
     }
+
+    const buttonLight = () =>{
+
+    }
+
+    // RoomFan-Control-active
+    const buttonFan = () => {
+        if(fanToggle === "RoomFan-Control"){
+            setFanToggle("RoomFan-Control-active")
+        }
+        else{
+            setFanToggle("RoomFan-Control")
+        }
+    }
+
+    const buttonFertilizer = () =>{
+
+    }
+
 
     return (
         <>
@@ -90,6 +120,7 @@ const PlantDetail = () => {
 
             <div className="PlantDetail-body">
                 {/* ---Row 1 Water and Lighting Control--- */}
+
                 <div className="PlantDetail-WaterLighting">
                     <div className="Water-Control">
                         <div className="WaterIcon-Button">
@@ -122,6 +153,7 @@ const PlantDetail = () => {
                                 {/* ----SwitchButtonBelow---- */}
                                 <div className="Lighting-Control-Button">
                                     <label className="Lighting-Control-Switch">
+                                        {/* สร้าง state เก็บค่า toggle */}
                                         <input type="checkbox" />
                                         <span className="Lighting-Swtich-Slider" />
                                     </label>
@@ -142,7 +174,7 @@ const PlantDetail = () => {
                 {/* ---Row Number 2 For Room Fan and Fertilizer Spray--- */}
 
                 <div className="PlantDetail-WaterLighting">
-                    <div className="RoomFan-Control">
+                    <div className={fanToggle}>
                         <div className="RoomFanIcon-Button">
                             <div className="RoomFan-Icon">
                                 <img className="RoomFan-Drop" src={Fan} width="20" height="23"/>
@@ -150,7 +182,7 @@ const PlantDetail = () => {
                             {/* ----SwitchButtonBelow---- */}
                             <div className="RoomFan-Control-Button">
                                 <label className="RoomFan-Control-Switch">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" onChange={buttonFan}/>
                                     <span className="RoomFan-Swtich-Slider" />
                                 </label>
                             </div>

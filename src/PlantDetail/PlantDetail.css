@@ -160,7 +160,8 @@
 .Water-Control{
   height: 120px;
   width: 155px;
-  background: rgba(81, 175, 237, 0.7);
+  /* background: rgba(81, 175, 237, 0.7); */
+  background-color: white;
   border-radius: 10px;
   margin-top: 20px;
 }
@@ -241,7 +242,6 @@ input:checked + .Water-Swtich-Slider::before{
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
   margin-left: 16px;
   height: 20px
 }
@@ -252,7 +252,7 @@ input:checked + .Water-Swtich-Slider::before{
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.6px;
-  color: rgba(255, 255, 255, 0.8);
+  /* color: rgba(255, 255, 255, 0.8); */
   margin-left: 16px;
 }
 
@@ -371,7 +371,7 @@ input:checked + .Lighting-Swtich-Slider::before{
   grid-template-columns: 1fr 1fr;
 }
 
-.RoomFan-Control{
+.RoomFan-Control-active{
   height: 120px;
   width: 155px;
   background: rgba(81, 175, 237, 0.7);
