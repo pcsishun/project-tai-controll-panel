@@ -20,6 +20,7 @@ const PlantDetail = () => {
     const [lightToggle, setLightToggle] = useState("Lighting-Control");
     const [fanToggle, setFanToggle] = useState("RoomFan-Control");
     const [fertilizerToggle, setFertilizerToggle] = useState("Fertilizer-Control")
+    const [automateToggle, setAutomateToggle] = useState("System-Automatic")
  
 
     // const ButtonActive =()=>{
@@ -35,11 +36,20 @@ const PlantDetail = () => {
     // }
 
     const buttonWater = () => {
+        if(waterToggle === "Water-Control"){
+            setWaterToggle("Water-Control-Active")
+        }else{
+            setWaterToggle("Water-Control")
+        }
         
     }
 
-    const buttonLight = () =>{
-
+    const buttonLight = () => {
+        if(lightToggle === "Lighting-Control"){
+            setLightToggle("Lighting-Control-Active")
+        }else{
+            setLightToggle("Lighting-Control")
+        }
     }
 
     // RoomFan-Control-active
@@ -53,9 +63,21 @@ const PlantDetail = () => {
     }
 
     const buttonFertilizer = () =>{
+        if(fertilizerToggle === "Fertilizer-Control"){
+            setFertilizerToggle("Fertilizer-Control-Active")
+        }else{
+            setFertilizerToggle("Fertilizer-Control")
+        }
 
     }
 
+    const buttonAutomate = () =>{
+        if(automateToggle === "System-Automatic"){
+            setAutomateToggle("System-Automatic-Active")
+        }else{
+            setAutomateToggle("System-Automatic")
+        }
+    }
 
     return (
         <>
@@ -122,7 +144,7 @@ const PlantDetail = () => {
                 {/* ---Row 1 Water and Lighting Control--- */}
 
                 <div className="PlantDetail-WaterLighting">
-                    <div className="Water-Control">
+                    <div className={waterToggle} >
                         <div className="WaterIcon-Button">
                             <div className="Water-Icon">
                                 <img className="Water-Drop" src={WaterIcon} width="20" height="23"/>
@@ -130,7 +152,7 @@ const PlantDetail = () => {
                             {/* ----SwitchButtonBelow---- */}
                             <div className="Water-Control-Button">
                                 <label className="Water-Control-Switch">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" onChange={buttonWater}/>
                                     <span className="Water-Swtich-Slider" />
                                 </label>
                             </div>
@@ -145,7 +167,7 @@ const PlantDetail = () => {
                             <p>2h 30min</p>
                         </div>
                     </div>
-                    <div className="Lighting-Control">
+                    <div className={lightToggle}>
                         <div className="LightingIcon-Button">
                                 <div className="Lighting-Icon">
                                     <img className="Lighting-Drop" src={MoonIcon} width="20" height="23"/>
@@ -154,7 +176,7 @@ const PlantDetail = () => {
                                 <div className="Lighting-Control-Button">
                                     <label className="Lighting-Control-Switch">
                                         {/* สร้าง state เก็บค่า toggle */}
-                                        <input type="checkbox" />
+                                        <input type="checkbox" onChange={buttonLight} />
                                         <span className="Lighting-Swtich-Slider" />
                                     </label>
                                 </div>
@@ -197,7 +219,7 @@ const PlantDetail = () => {
                             <p>5h 30min</p>
                         </div>
                     </div>
-                    <div className="Fertilizer-Control">
+                    <div className={fertilizerToggle}>
                         <div className="FertilizerIcon-Button">
                                 <div className="Fertilizer-Icon">
                                     <img className="Fertilizer-Drop" src={ThreeLeaf} width="25" height="25"/>
@@ -205,7 +227,7 @@ const PlantDetail = () => {
                                 {/* ----SwitchButtonBelow---- */}
                                 <div className="Fertilizer-Control-Button">
                                     <label className="Fertilizer-Control-Switch">
-                                        <input type="checkbox" />
+                                        <input type="checkbox" onChange={buttonFertilizer}/>
                                         <span className="Fertilizer-Swtich-Slider" />
                                     </label>
                                 </div>
@@ -222,7 +244,7 @@ const PlantDetail = () => {
                     </div>
                 </div>
 
-                <div className="System-Automatic">
+                <div className={automateToggle}>
                     <div className="Automate-Image">
                         <div className="Automate-Image-Background">
                             <img className="Automate-Chip-Image" src={AiChip} width="65"/>
@@ -242,7 +264,7 @@ const PlantDetail = () => {
                     <div className="Automate-Switch">
                         <div className="Automate-Button-Control">
                             <label className="Automate-Control-Switch">
-                                <input type="checkbox"/>
+                                <input type="checkbox" onChange={buttonAutomate}/>
                                 <span className="Automate-Control-Slider"/>
                             </label>
 

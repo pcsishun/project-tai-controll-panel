@@ -7,6 +7,8 @@ import System from './System/System';
 import FooterBar from './FooterBar/FooterBar';
 import LoginPage from './LoginPage/LoginPage'
 import RegisterPage from './RegisterPage/RegisterPage'
+import FodderMenu from './Dashboard/DashboardBody/CardMenu/CardMenuFodder'
+
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/" element={<Dashborad/>}></Route>
+      </Routes>
+      <Routes>
+        <Route path="/:machinelist" element={<FodderMenu/>}></Route>
       </Routes>
       <Routes>
         <Route path="/plantdetail" element={<PlantDetail/>}></Route>

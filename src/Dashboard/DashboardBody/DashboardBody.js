@@ -1,5 +1,7 @@
 import "./DashboardBody.css";
-import CardMenuAll from "./CardMenu/CardMenuAll";
+import CardMenuFodder from "./CardMenu/CardMenuFodder"
+import FodderMenu from  "./CardMenu/CardMenuFodder"
+import {Link} from 'react-router-dom';
 
 const DashboardBody = () =>{
     return(
@@ -10,16 +12,10 @@ const DashboardBody = () =>{
                 </div>
                 <div className="myPlant-ProductChoice">
                     <span className="ProductChoice-all-plant">All Plant</span> 
-                    <span className="ProductChoice-Fodder">Fodder</span> 
+                    <span className="ProductChoice-Fodder"><Link to="/src/Dashboard/DashboardBody/CardMenu/CardMenuFodder.js">Fodder</Link></span> 
                     <span className="ProductChoice-Tobacco">Tobacco</span>
                 </div>
-                <CardMenuAll/>
-
             </div>
-
-
-        
-        
         </>
 
     );

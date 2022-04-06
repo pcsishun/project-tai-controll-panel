@@ -157,6 +157,15 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.Water-Control-Active{
+  height: 120px;
+  width: 155px;
+  /* background: rgba(81, 175, 237, 0.7); */
+  background-color: #51AFEDB2;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
 .Water-Control{
   height: 120px;
   width: 155px;
@@ -169,7 +178,7 @@
 .Water-Icon{
   height: 35px;
   width: 35px;
-  background-color: white;
+  background-color:#F3F6F6;
   border-radius: 100%;
   margin: 16px 0px 0px 16px;
 }
@@ -178,14 +187,6 @@
   margin: 7px 7px 7px 8px;
 }
 
-.Lighting-Control{
-  height: 120px;
-  width: 155px;
-  background: #FFFFFF;
-  border-radius: 10px;
-  margin-top: 20px;
-  margin-left: 5px;
-}
 
 /* ----Experimenting Button Making--- */
 
@@ -221,7 +222,7 @@
   height: 30px;
   width: 30px;
   bottom: px;
-  background-color: white;
+  background-color: grey;
   transition: 0.4s;
   border-radius: 100%;
 
@@ -264,10 +265,18 @@ input:checked + .Water-Swtich-Slider::before{
   grid-template-columns: 1fr 1fr;
 }
 
-.Lighting-Control{
+.Lighting-Control-Active{
   height: 120px;
   width: 155px;
   background: rgba(81, 175, 237, 0.7);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.Lighting-Control{
+  height: 120px;
+  width: 155px;
+  background: #FFFFFF;
   border-radius: 10px;
   margin-top: 20px;
 }
@@ -284,14 +293,7 @@ input:checked + .Water-Swtich-Slider::before{
   margin: 7px 7px 7px 8px;
 }
 
-.Lighting-Control{
-  height: 120px;
-  width: 155px;
-  background: #FFFFFF;
-  border-radius: 10px;
-  margin-top: 20px;
-  margin-left: 5px;
-}
+
 
 /* ----Experimenting Button Making--- */
 
@@ -377,6 +379,7 @@ input:checked + .Lighting-Swtich-Slider::before{
   background: rgba(81, 175, 237, 0.7);
   border-radius: 10px;
   margin-top: 20px;
+  margin-left: 5px;
 }
 
 .RoomFan-Icon{
@@ -478,12 +481,22 @@ input:checked + .RoomFan-Swtich-Slider::before{
   grid-template-columns: 1fr 1fr;
 }
 
-.Fertilizer-Control{
+.Fertilizer-Control-Active{
   height: 120px;
   width: 155px;
   background: rgba(81, 175, 237, 0.7);
   border-radius: 10px;
   margin-top: 20px;
+  margin-left: 5px;
+}
+
+.Fertilizer-Control{
+  height: 120px;
+  width: 155px;
+  background: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 5px;
 }
 
 .Fertilizer-Icon{
@@ -580,6 +593,17 @@ input:checked + .Fertilizer-Swtich-Slider::before{
 /* -----Automatic System Card----- */
 
 .System-Automatic{
+  background-color: white;  ;
+  height: 100px;
+  width: 335;
+  margin: 20px 20px 0px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.System-Automatic-Active{
   background-color: #51AFEDBF;  ;
   height: 100px;
   width: 335;
@@ -622,7 +646,6 @@ input:checked + .Fertilizer-Swtich-Slider::before{
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
 }
 
 .Automate-Timer{
@@ -632,7 +655,6 @@ input:checked + .Fertilizer-Swtich-Slider::before{
   font-size: 12px;
   line-height: 150%;
   letter-spacing: 0.6px;
-  color: #FFFFFF;
   margin-left: 10px;
 }
 
@@ -671,7 +693,7 @@ input:checked + .Fertilizer-Swtich-Slider::before{
   content: "";
   height: 30px;
   width: 30px;
-  background-color: white;
+  background-color: grey;
   transition: 0.4s;
   border-radius: 100%;
 }
