@@ -9,33 +9,33 @@ const CardMenuTobacco = () => {
     
     return(
         <>
-            <div className="SmallPanel-FodderBox">
-                <div className="SmallPanel-FodderBox-control">
+            <div className="SmallPanel-TobaccoBox">
+                <div className="SmallPanel-TobaccoBox-control">
                     <div className="container-img">
-                        <img className="FodderImage-Edit" src={FodderImage} width="350px" height="180px"/>  
+                        <img className="TobaccoImage-Edit" src={FodderImage} width="330px" height="180px"/>  
                     </div>
 
-                    <div className="FodderBox-PlantCount">
+                    <div className="TobaccoBox-PlantCount">
                         <p>800 Plants</p>
                     </div>
 
-                    <div className="FodderBox-TypeName">
-                        <p>Fodder Plantation</p>
+                    <div className="TobaccoBox-TypeName">
+                        <p>Tobacco Curing Facility</p>
                     </div>
 
-                    <div className="FodderBox-Location">
+                    <div className="TobaccoBox-Location">
                         <p>Sansai, Chiang Mai, Thailand</p>
                     </div>
 
-                    <div className="FodderBox-Monitor">
-                        <div className="FodderBox-LightDark">
+                    <div className="TobaccoBox-Monitor">
+                        <div className="TobaccoBox-LightDark">
                             <img className="LightDark-SunEdit" src={Sun}/>
                         </div>
-                        <div className="FodderBox-Status">
-                            <div className="FodderBox-Temp">
+                        <div className="TobaccoBox-Status">
+                            <div className="TobaccoBox-Temp">
                                 <p>+22 &#x2103;</p>
                             </div>
-                            <div className="FodderBox-HumidWind">
+                            <div className="TobaccoBox-HumidWind">
                                 <span className="humid">
                                     <img src={Humid} width="14px" height="18"/>
                                     <span>20%</span>
@@ -51,7 +51,7 @@ const CardMenuTobacco = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="FodderBox-Action">
+                    <div className="TobaccoBox-Action">
                         <p>Planned Activity : <span style={{color:"#DC257D"}}>Water Spraying</span></p>
                     </div>
                 </div>

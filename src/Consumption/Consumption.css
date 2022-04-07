@@ -9,5 +9,118 @@
   height: 600px;
   left: 0px;
   right: 0px;
-  background: #E5E5E5;
+  background: white;
+}
+
+.Consumption-BackButton{
+  text-align: left;
+  margin-left: 20px ;
+  padding-top: 55px;
+}
+
+.FlexResource-Icon{
+  display: flex;
+  height: 70px;
+}
+
+.Consumption-ResourceConsumption{
+  text-align: left;
+  margin-left: 20px;
+  flex: 1;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.Resource-Icon{
+  flex: 1;
+}
+
+.Icon-Round{
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.WaterDrop-Edit{
+  margin-top: 5px;
+}
+
+.ThunderIcon-Edit{
+  position: absolute;
+  left: 56%;
+  bottom: 75%;
+}
+
+.Consumption-Location{
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #B5B8BE;
+  text-align: left;
+  margin-left: 20px;
+
+}
+
+.Consumption-Date{
+  text-align: center;
+}
+
+.Consumption-Date span{
+  font-size:17px;
+  padding: 0px 20px 0px 20px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 30px;
+  color: #676C6D;
+  font-family: 'SF Pro';
+  font-style: normal;
+}
+
+.Consumption-Cost{
+  height: 150px;
+  margin: 15px 13px 0px 13px;
+  border: 1px solid red;
+  display: flex;
+}
+
+.Consumption-WaterPrice{
+  flex: 1;
+  text-align: center;
+}
+
+.WaterPrice-HalfCircle{
+  width: 100px;
+  height: 100px;
+  border: 12px solid #009CFF;
+  /* border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 500px; */
+  border-bottom-color: white;
+  border-radius: 80px;
+  margin: auto;
+  margin-top: 15px;
+
+}
+
+.WaterPrice-HalfCircle span{
+  position: absolute;
+  top: 48%;
+  left: 21%;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.Consumption-ElectricPrice{
+  border: 1px solid yellow;
+  flex: 1;
 }
