@@ -12,10 +12,12 @@ const DashboardBody = () =>{
                 </div>
                 <div className="myPlant-ProductChoice">
                     <span className="ProductChoice-all-plant">All Plant</span> 
-                    <span className="ProductChoice-Fodder"><Link to="/src/Dashboard/DashboardBody/CardMenu/CardMenuFodder.js">Fodder</Link></span> 
+                    <span className="ProductChoice-Fodder">Fodder</span> 
                     <span className="ProductChoice-Tobacco">Tobacco</span>
                 </div>
             </div>
+
+            <FodderMenu/>
         </>
 
     );
