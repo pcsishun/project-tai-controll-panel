@@ -20,11 +20,11 @@ function App() {
         <Route path="/registerpage" element={<RegisterPage/>}></Route>
       </Routes>
       <Routes>
-        <Route path="/" element={<Dashborad/>}></Route>
+        <Route path="/dashboard" element={<Dashborad/>}></Route>
       </Routes>
-      <Routes>
-        <Route path="/:machinelist" element={<FodderMenu/>}></Route>
-      </Routes>
+      {/* <Routes>
+        <Route path="/:foddermachine" element={<FodderMenu/>}></Route>
+      </Routes> */}
       <Routes>
         <Route path="/plantdetail" element={<PlantDetail/>}></Route>
       </Routes>
