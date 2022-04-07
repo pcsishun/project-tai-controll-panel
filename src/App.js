@@ -22,9 +22,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashborad/>}></Route>
       </Routes>
-      <Routes>
+      {/* <Routes>
         <Route path="/:machinelist" element={<FodderMenu/>}></Route>
-      </Routes>
+      </Routes> */}
       <Routes>
         <Route path="/plantdetail" element={<PlantDetail/>}></Route>
       </Routes>
