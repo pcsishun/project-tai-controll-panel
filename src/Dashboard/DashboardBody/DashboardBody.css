@@ -24,3 +24,36 @@
     box-sizing: border-box;
     border-radius: 12px;
 }
+
+.machineButtonAll{
+    background-color: white;
+    border: 0px white;  
+}
+
+.machineButtonAll-Active{
+    color: #76a0ef;
+    background-color: white;
+    border: 0px white; 
+}
+
+.machineButtonFodder{
+    background-color: white;
+    border: 0px white;  
+}
+
+.machineButtonFodder-Active{
+    color: #76a0ef;
+    background-color: white;
+    border: 0px white; 
+}
+
+.machineButtonTobacco{
+    background-color: white;
+    border: 0px white;
+}
+
+.machineButtonTobacco-Active{
+    color: #76a0ef;
+    background-color: white;
+    border: 0px white; 
+}
