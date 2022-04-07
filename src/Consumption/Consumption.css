@@ -11,3 +11,58 @@
   right: 0px;
   background: #E5E5E5;
 }
+
+.Consumption-BackButton{
+  text-align: left;
+  margin-left: 20px ;
+  padding-top: 55px;
+}
+
+.FlexResource-Icon{
+  display: flex;
+  height: 70px;
+}
+
+.Consumption-ResourceConsumption{
+  text-align: left;
+  margin-left: 20px;
+  flex: 1;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.Resource-Icon{
+  flex: 1;
+}
+
+.Icon-Round{
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.WaterDrop-Edit{
+  margin-top: 5px;
+}
+
+.ThunderIcon-Edit{
+  position: absolute;
+  left: 56%;
+  bottom: 75%;
+}
+
+.Consumption-Location{
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #B5B8BE;
+  text-align: left;
+  margin-left: 20px;
+
+}
