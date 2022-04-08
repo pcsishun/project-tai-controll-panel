@@ -12,7 +12,7 @@ const CardMenuTobacco = () => {
             <div className="SmallPanel-TobaccoBox">
                 <div className="SmallPanel-TobaccoBox-control">
                     <div className="container-img">
-                        <img className="TobaccoImage-Edit" src={FodderImage} width="350px" height="180px"/>  
+                        <img className="TobaccoImage-Edit" src={FodderImage} width="330px" height="180px"/>  
                     </div>
 
                     <div className="TobaccoBox-PlantCount">

@@ -1,7 +1,7 @@
 import "./LoginPage.css"
 import tailogo from "../images/TAI Logo@2x.png"
-import {useState, useEffect} from 'react';
-import {Link, Routes, Route} from 'react-router-dom';
+import {useState} from 'react';
+import {Link} from 'react-router-dom';
 
 const LoginPage = () => {
     

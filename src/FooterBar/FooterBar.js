@@ -25,7 +25,7 @@ const FooterBar = () => {
             </div>
             <div className="menu-btn-home">
                 <div className="set-menu-home">
-                    <Link to="/">
+                    <Link to="/dashboard">
                         <img src={HomeButton} width="20px" height="20px"/>
                     </Link>
                 </div>
@@ -39,7 +39,9 @@ const FooterBar = () => {
             </div>
             <div className="menu-btn">
                 <div className="set-menu">
-                    <img src={Gear} width="20px" height="20px"/>
+                    <Link to="/loginpage">
+                        <img src={Gear} width="20px" height="20px"/>
+                    </Link>
                 </div>
             </div>
         </div>

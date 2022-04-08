@@ -116,14 +116,18 @@
     background: #FFFFFF;
     border: 1px solid #E3E6E6;
     border-radius: 12px;
+    margin-top: 20px;
 }
 
 .TobaccoImage-Edit{
     margin: 10px;
-} 
+    border-radius: 10px ;
+
+}
 
 .container-img{
     height: 180px;
+
 }
 
 .TobaccoBox-PlantCount{

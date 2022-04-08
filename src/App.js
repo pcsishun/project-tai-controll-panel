@@ -1,13 +1,12 @@
 import './App.css';
 import Dashborad  from './Dashboard/Dashboard';
-import {Link, Routes, Route} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import PlantDetail from './PlantDetail/PlantDetail';
 import Consumption from './Consumption/Consumption';
 import System from './System/System';
 import FooterBar from './FooterBar/FooterBar';
 import LoginPage from './LoginPage/LoginPage'
 import RegisterPage from './RegisterPage/RegisterPage'
-import FodderMenu from './Dashboard/DashboardBody/CardMenu/CardMenuFodder'
 
 
 function App() {
@@ -22,9 +21,6 @@ function App() {
       <Routes>
         <Route path="/dashboard" element={<Dashborad/>}></Route>
       </Routes>
-      {/* <Routes>
-        <Route path="/:foddermachine" element={<FodderMenu/>}></Route>
-      </Routes> */}
       <Routes>
         <Route path="/plantdetail" element={<PlantDetail/>}></Route>
       </Routes>
