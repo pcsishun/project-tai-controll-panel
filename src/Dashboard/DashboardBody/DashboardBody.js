@@ -1,40 +1,15 @@
 import "./DashboardBody.css";
 import TobaccoMenu from "./CardMenu/CardMenuTobacco"
 import FodderMenu from  "./CardMenu/CardMenuFodder"
-import {Link, Route} from 'react-router-dom';
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 
-// const Dashborad =({match}) => {
-//     <div>
-//         <Route path={match.url + '/foddermachine'} component={FodderMenu}/>
-//     </div>
-// }
 
 const DashboardBody = () =>{
 
     const [changeMachineType, setChangeMachineType] = useState("all-plant");
-
     const [allTextColor, setallTextColor] = useState("machineButtonAll-Active");
-
     const [fodderTextColor, setfodderTextColor] = useState("machineButtonFodder");
-
     const [tobaccoTextColor, settobaccoTextColor] = useState("machineButtonTobacco");
-
-
- 
-
-    // const changeMachine = (param) => {
-    //     console.log(param)
-    //     if(param === "all-plant"){
-    //         setChangeMachineType("all-plant")
-    //     }
-    //     else if (param === "Fodder"){
-    //         setChangeMachineType("Fodder")
-    //     }else if (param === "Tobacco"){
-    //         setChangeMachineType("Tobacco")
-    //     }
-
-    // }
 
     return(
         <>
@@ -69,8 +44,6 @@ const DashboardBody = () =>{
             {
                 changeMachineType === "Tobacco"  && <TobaccoMenu/>
             }
-            
-            
         </>
 
     );

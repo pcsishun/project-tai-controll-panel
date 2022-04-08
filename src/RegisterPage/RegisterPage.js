@@ -1,6 +1,6 @@
 import "./RegisterPage.css"
 import tailogo from "../images/TAI Logo@2x.png"
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
 
@@ -42,9 +42,9 @@ const RegisterPage = () => {
         }
     }
 
-    const debuging = () => {
-        console.log(checkingData)
-    }
+    // const debuging = () => {
+    //     console.log(checkingData)
+    // }
     
 
     return(
@@ -108,9 +108,9 @@ const RegisterPage = () => {
                     </div>
                     <div className="Register-Submit">
                         <button onClick={onHaddleSubmit}>submit</button>
-                        <div>
+                        {/* <div>
                             <button onClick={debuging}>Debug</button>
-                        </div>
+                        </div> */}
                         <div className="alreadly-have-password">
                             <Link to="/loginpage">alreadly have account</Link>
                         </div>
