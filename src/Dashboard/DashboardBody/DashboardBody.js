@@ -14,22 +14,6 @@ const DashboardBody = () =>{
 
     const [changeMachineType, setChangeMachineType] = useState("all-plant");
 
-    
- 
- 
-
-    // const changeMachine = (param) => {
-    //     console.log(param)
-    //     if(param === "all-plant"){
-    //         setChangeMachineType("all-plant")
-    //     }
-    //     else if (param === "Fodder"){
-    //         setChangeMachineType("Fodder")
-    //     }else if (param === "Tobacco"){
-    //         setChangeMachineType("Tobacco")
-    //     }
-
-    // }
 
     return(
         <>
