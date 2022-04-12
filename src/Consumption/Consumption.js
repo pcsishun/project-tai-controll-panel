@@ -3,6 +3,7 @@ import  BackButton from "../images/Button Back.png"
 import WaterDrop from "../images/waterdropblue.png"
 import ThunderIcon from "../images/thunder-2 2.png"
 import {useState, useEffect} from 'react';
+import LineChart from "./Chart/Linechart";
 
 
 
@@ -64,7 +65,9 @@ const Consumption = () => {
                     </div>
                 </div>
 
-                <div className="Consumption-Resource-Graph"></div>
+                <div className="Consumption-Resource-Graph">
+                    <LineChart/>
+                </div>
 
             </div>
         </>
