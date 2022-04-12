@@ -39,13 +39,13 @@ const Consumption = () => {
 
             <div className="Consumption-body">
                 <div className="Consumption-Date">
-                <span className="Consumption-Date-Day"><button className={dayColor} onClick={()=> {setdayColor("Date-Day-Active")}}>
+                <span className="Consumption-Date-Day"><button className={dayColor} onClick={()=> {setdayColor("Date-Day-Active"); setmonthColor("Date-Month"); setyearColor("Date-Year")}}>
                 Day</button>
                 </span>
-                <span className="Consumption-Date-Month"><button className="Date-Month">
+                <span className="Consumption-Date-Month"><button className={monthColor} onClick={()=> {setmonthColor("Date-Month-Active"); setdayColor("Date-Day"); setyearColor("Date-Year")}}>
                 Month</button>
                 </span>
-                <span className="Consumption-Date-Year"><button className="Date-Year">
+            <span className="Consumption-Date-Year"><button className={yearColor} onClick={()=> {setyearColor("Date-Year-Active"); setdayColor("Date-Day"); setmonthColor("Date-Month")}}>
                 Year</button>
                 </span>
                 </div>
