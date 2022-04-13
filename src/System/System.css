@@ -4,6 +4,54 @@
     height: 218px;
     border-radius: 0px 0px 18px 18px;
   }
+
+  /* making button part */
+
+.BackButton{
+  text-align: left;
+  margin: 0px 0px 0px 20px;
+  padding-top: 55px;
+}
+
+/* making flexcontainer, title, location part */
+
+.SystemStatus-FlexContainer{
+  display: flex;
+  height: 70px;
+}
+
+.SystemStatus-Title{
+  text-align: left;
+  flex: 1;
+  margin-left: 20px;
+  height: 20px;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 116.5%;
+  color: #FFFFFF;
+}
+
+.SystemStatus-Location{
+  text-align: left;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 80%;
+  letter-spacing: 0.2px;
+  margin-left: 20px;
+  color: #B5B8BE;
+}
+
+.SystemStatus-Image{
+  flex: 1;
+  height: 20px;
+  margin-top: 20px;
+  margin-right: 30px;
+
+}
   
 .System-body {
   height: 600px;

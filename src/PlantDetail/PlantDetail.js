@@ -10,6 +10,7 @@ import Fan from "../images/fan 1.png"
 import ThreeLeaf from "../images/3Leaf.png"
 import AiChip from "../images/chip-2 1.png"
 import {useState, useEffect} from 'react';
+import { Link } from "react-router-dom"
 
 
 
@@ -83,7 +84,7 @@ const PlantDetail = () => {
         <>
             <div className="PlantDetail-header">
                 <div className="PlantDetail-BackButton">
-                    <img src={BackButton} width="44" height="44"/>
+                    <Link to="/dashboard"><img src={BackButton} width="44" height="44"/></Link>
                 </div>
                 <div className="PlantDetail-PlantCount">
                     <p className="">800 Plants</p>

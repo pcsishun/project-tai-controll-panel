@@ -4,6 +4,7 @@ import WaterDrop from "../images/waterdropblue.png"
 import ThunderIcon from "../images/thunder-2 2.png"
 import {useState, useEffect} from 'react';
 import LineChart from "./Chart/Linechart";
+import { Link } from "react-router-dom";
 
 
 
@@ -19,7 +20,7 @@ const Consumption = () => {
         <>
             <div className="Consumption-header">
                 <div className="Consumption-BackButton">
-                    <img src={BackButton} width="44" height="44"/>
+                    <Link to="/dashboard"><img src={BackButton} width="44" height="44"/></Link>
                 </div>
                 <div className="FlexResource-Icon">
                     <div className="Consumption-ResourceConsumption">
